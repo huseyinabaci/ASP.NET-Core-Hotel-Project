@@ -20,7 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\HotelProject.EntityLayer\HotelProject.EntityLayer.csproj" />
+    <ProjectReference Include="..\HotelProject.EntityLayer\HotelProject.EntityLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dtos\TestimonialDto\" />
   </ItemGroup>
 
 </Project>
