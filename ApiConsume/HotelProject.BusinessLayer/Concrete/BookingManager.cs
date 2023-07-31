@@ -1,5 +1,6 @@
 ﻿using HotelProject.BusinessLayer.Abstract;
 using HotelProject.DataAccessLayer.Abstract;
+using HotelProject.DataAccessLayer.EntityFramework;
 using HotelProject.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -38,6 +39,20 @@ namespace HotelProject.BusinessLayer.Concrete
         public void TUpdate(Booking t)
         {
             _BookingDal.Update(t);
+        }
+        public void TBookingStatusChangeApproved(Booking booking)
+        {
+            _BookingDal.BookingStatusChangeApproved(booking);
+        }
+
+        public void TBookingStatusChangeApproved2(int id)
+        {
+            _BookingDal.BookingStatusChangeApproved2(id);
+        }
+
+        public void TBookingStatusChangeApproved3(int id)
+        {
+            _BookingDal.BookingStatusChangeApproved3(id);
         }
     }
 }

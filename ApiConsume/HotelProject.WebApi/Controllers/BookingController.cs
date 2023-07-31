@@ -46,5 +46,11 @@ namespace HotelProject.WebApi.Controllers
             var values = _bookingService.TGetByID(id);
             return Ok(values);
         }
+        [HttpGet("BookingAproved")]
+        public IActionResult BookingAproved(int id)
+        {
+            _bookingService.TBookingStatusChangeApproved3(id);
+            return Ok();
+        }
     }
 }
